@@ -1,0 +1,122 @@
+/* import the Roboto font from Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic);
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+body {
+  background: #2153BD;
+  margin: auto;
+  background-image: url('../img/website.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+header {
+  background: #171670;
+  color: #FFF;
+  padding: 0px 100px;
+  display: flex;
+  align-items: baseline;
+}
+
+header h1 {
+  font-size: 20px;
+  flex-grow: 1;
+}
+
+header h1 a {
+  cursor: pointer;
+  color: #FFF;
+  text-decoration: none;
+}
+
+header nav a {
+  display: inline-block;
+  color: #FFF;
+  font-size: 15px;
+  margin: 0 10px;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+header nav a:hover {
+  color: #33A0BD;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  padding: 0 5px;
+  margin: 0 auto;
+  //border: 1px solid red;
+}
+
+header {
+  background: #171670;
+  color: #FFF;
+}
+
+header .container {
+  display: flex;
+  align-items: baseline;
+}
+
+header .menu-button {
+  display: none;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 500px) {
+
+  header .menu-button {
+    display: block;
+    text-transform: uppercase;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  header .menu-button:hover {
+    color: #33A0BD;
+  }
+
+  header nav {
+    width: 100%;
+  }
+
+  header nav a {
+    display: block;
+    border-top: 1px solid #FFF;
+    margin: 0;
+    text-align: center;
+    padding: 8px 0 3px;
+  }
+
+  header .container {
+    flex-wrap: wrap;
+  }
+
+  header nav.hide-on-mobile {
+  display: none;
+  }
+
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  font-size: 13px;
+  padding: 0;
+  width: 100%;
+  background-color: #2153BD;
+  text-align: center;
+  cursor: pointer;
+}
+
+.footer h3 a {
+    color: #FFF;
+    text-decoration: none;
+}

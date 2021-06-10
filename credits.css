@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+h2 {
+  margin-top: 5vh;
+  font-size: 50px;
+  text-align: center;
+  color: #33A0BD;
+  font-size: 40px;
+}
+
+p {
+  color: #FFF;
+  text-align: center;
+  padding-left: 4%;
+  padding-right: 4%;
+  font-size: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border: 5px solid #33A0BD;
+}
+
+.gallery img:hover {
+  transition: 0.4s;
+  border: 5px solid #FFF;
+}
+
+.des {
+  text-align: left;
+  padding: 1px;
+  font-size: 17px;
+  color: #FFF;
+}
+
+.responsive {
+  padding: 0 50px;
+  float: left;
+  width: 50%;
+  margin-top: 5vh;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 50%;
+    margin: 6px 0;
+    margin-top: 10vh;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+    margin-top: 10vh;
+  }
+}
